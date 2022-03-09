@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-08T12:18:12 BDT" name="Default suite" finished-at="2022-03-08T12:18:16 BDT" duration-ms="4015">
+  <suite started-at="2022-03-09T16:00:17 BDT" name="Default suite" finished-at="2022-03-09T16:00:24 BDT" duration-ms="7384">
     <groups>
     </groups>
-    <test started-at="2022-03-08T12:18:12 BDT" name="Default test" finished-at="2022-03-08T12:18:16 BDT" duration-ms="4015">
-      <class name="ui.VerifyTitleTest">
-        <test-method signature="titleTest()[pri:0, instance:ui.VerifyTitleTest@6c130c45]" started-at="2022-03-08T12:18:12 BDT" name="titleTest" finished-at="2022-03-08T12:18:16 BDT" duration-ms="3994" status="PASS">
+    <test started-at="2022-03-09T16:00:17 BDT" name="Default test" finished-at="2022-03-09T16:00:24 BDT" duration-ms="7384">
+      <class name="ui.VerifyTitleAndTextTest">
+        <test-method signature="titleTest()[pri:0, instance:ui.VerifyTitleAndTextTest@6c130c45]" started-at="2022-03-09T16:00:17 BDT" name="titleTest" finished-at="2022-03-09T16:00:24 BDT" duration-ms="7365" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleTest -->
-      </class> <!-- ui.VerifyTitleTest -->
+      </class> <!-- ui.VerifyTitleAndTextTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
