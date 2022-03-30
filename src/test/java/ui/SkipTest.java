@@ -3,7 +3,9 @@ package ui;
 import org.testng.SkipException;
 import org.testng.annotations.Test;
 
-public class SkipTest {
+import common.CommonDataSetup;
+
+public class SkipTest extends CommonDataSetup{
 
 	Boolean datasetup = true;
 

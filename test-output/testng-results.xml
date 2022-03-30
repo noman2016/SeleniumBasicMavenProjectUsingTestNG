@@ -1,67 +1,376 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="8" passed="6" failed="0" skipped="0">
+<testng-results ignored="12" total="38" passed="24" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-30T15:56:26 BDT" name="SeleniumBasicMavenProjectUsingTestNG by groups" finished-at="2022-03-30T15:56:26 BDT" duration-ms="39">
+  <suite started-at="2022-03-30T17:44:57 BDT" name="UI Test" finished-at="2022-03-30T17:45:03 BDT" duration-ms="6233">
     <groups>
       <group name="bvt">
-        <method signature="BeforeAfterTest.test3()[pri:0, instance:ui.BeforeAfterTest@fba92d3]" name="test3" class="ui.BeforeAfterTest"/>
-        <method signature="GroupTest.test3()[pri:0, instance:ui.GroupTest@18d87d80]" name="test3" class="ui.GroupTest"/>
+        <method signature="GroupTest.test3()[pri:0, instance:ui.GroupTest@1b2abca6]" name="test3" class="ui.GroupTest"/>
+        <method signature="GroupTest.test4()[pri:0, instance:ui.GroupTest@1b2abca6]" name="test4" class="ui.GroupTest"/>
       </group> <!-- bvt -->
       <group name="user-registration">
-        <method signature="BeforeAfterTest.test1()[pri:1, instance:ui.BeforeAfterTest@fba92d3]" name="test1" class="ui.BeforeAfterTest"/>
-        <method signature="BeforeAfterTest.test2()[pri:2, instance:ui.BeforeAfterTest@fba92d3]" name="test2" class="ui.BeforeAfterTest"/>
-        <method signature="BeforeAfterTest.test3()[pri:0, instance:ui.BeforeAfterTest@fba92d3]" name="test3" class="ui.BeforeAfterTest"/>
-        <method signature="GroupTest.test1()[pri:1, instance:ui.GroupTest@18d87d80]" name="test1" class="ui.GroupTest"/>
-        <method signature="GroupTest.test2()[pri:2, instance:ui.GroupTest@18d87d80]" name="test2" class="ui.GroupTest"/>
-        <method signature="GroupTest.test3()[pri:0, instance:ui.GroupTest@18d87d80]" name="test3" class="ui.GroupTest"/>
+        <method signature="GroupTest.test1()[pri:1, instance:ui.GroupTest@1b2abca6]" name="test1" class="ui.GroupTest"/>
+        <method signature="GroupTest.test2()[pri:2, instance:ui.GroupTest@1b2abca6]" name="test2" class="ui.GroupTest"/>
+        <method signature="GroupTest.test3()[pri:0, instance:ui.GroupTest@1b2abca6]" name="test3" class="ui.GroupTest"/>
+        <method signature="GroupTest.test4()[pri:0, instance:ui.GroupTest@1b2abca6]" name="test4" class="ui.GroupTest"/>
       </group> <!-- user-registration -->
       <group name="regression">
-        <method signature="BeforeAfterTest.test1()[pri:1, instance:ui.BeforeAfterTest@fba92d3]" name="test1" class="ui.BeforeAfterTest"/>
-        <method signature="BeforeAfterTest.test2()[pri:2, instance:ui.BeforeAfterTest@fba92d3]" name="test2" class="ui.BeforeAfterTest"/>
-        <method signature="BeforeAfterTest.test3()[pri:0, instance:ui.BeforeAfterTest@fba92d3]" name="test3" class="ui.BeforeAfterTest"/>
-        <method signature="GroupTest.test1()[pri:1, instance:ui.GroupTest@18d87d80]" name="test1" class="ui.GroupTest"/>
-        <method signature="GroupTest.test2()[pri:2, instance:ui.GroupTest@18d87d80]" name="test2" class="ui.GroupTest"/>
-        <method signature="GroupTest.test3()[pri:0, instance:ui.GroupTest@18d87d80]" name="test3" class="ui.GroupTest"/>
+        <method signature="GroupTest.test1()[pri:1, instance:ui.GroupTest@1b2abca6]" name="test1" class="ui.GroupTest"/>
+        <method signature="GroupTest.test2()[pri:2, instance:ui.GroupTest@1b2abca6]" name="test2" class="ui.GroupTest"/>
+        <method signature="GroupTest.test3()[pri:0, instance:ui.GroupTest@1b2abca6]" name="test3" class="ui.GroupTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2022-03-30T15:56:26 BDT" name="GRP-regression" finished-at="2022-03-30T15:56:26 BDT" duration-ms="39">
-      <class name="ui.BeforeAfterTest">
-        <test-method is-config="true" signature="beforeGroup()[pri:0, instance:ui.BeforeAfterTest@fba92d3]" started-at="2022-03-30T15:56:26 BDT" name="beforeGroup" finished-at="2022-03-30T15:56:26 BDT" duration-ms="3" status="PASS">
+    <test started-at="2022-03-30T17:44:57 BDT" name="Functional Testing" finished-at="2022-03-30T17:45:03 BDT" duration-ms="6233">
+      <class name="ui.VerifyTitleTest">
+        <test-method signature="titleTest()[pri:0, instance:ui.VerifyTitleTest@7c711375]" started-at="2022-03-30T17:44:57 BDT" name="titleTest" finished-at="2022-03-30T17:45:00 BDT" duration-ms="3491" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeGroup -->
-        <test-method signature="test3()[pri:0, instance:ui.BeforeAfterTest@fba92d3]" started-at="2022-03-30T15:56:26 BDT" name="test3" finished-at="2022-03-30T15:56:26 BDT" duration-ms="3" status="PASS">
+        </test-method> <!-- titleTest -->
+      </class> <!-- ui.VerifyTitleTest -->
+      <class name="ui.SkipTest">
+        <test-method is-config="true" signature="dataSetuo()[pri:0, instance:ui.SkipTest@58d75e99]" started-at="2022-03-30T17:44:57 BDT" name="dataSetuo" finished-at="2022-03-30T17:44:57 BDT" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method signature="test1()[pri:1, instance:ui.BeforeAfterTest@fba92d3]" started-at="2022-03-30T15:56:26 BDT" name="test1" finished-at="2022-03-30T15:56:26 BDT" duration-ms="1" status="PASS">
+        </test-method> <!-- dataSetuo -->
+        <test-method signature="skipTest2()[pri:0, instance:ui.SkipTest@58d75e99]" started-at="2022-03-30T17:44:57 BDT" name="skipTest2" finished-at="2022-03-30T17:44:57 BDT" duration-ms="2" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skiping this test]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skiping this test
+at ui.SkipTest.skipTest2(SkipTest.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="test2()[pri:2, instance:ui.BeforeAfterTest@fba92d3]" started-at="2022-03-30T15:56:26 BDT" name="test2" finished-at="2022-03-30T15:56:26 BDT" duration-ms="0" status="PASS">
+        </test-method> <!-- skipTest2 -->
+        <test-method signature="skipTest3()[pri:0, instance:ui.SkipTest@58d75e99]" started-at="2022-03-30T17:44:57 BDT" name="skipTest3" finished-at="2022-03-30T17:44:57 BDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method is-config="true" signature="afterGroup()[pri:0, instance:ui.BeforeAfterTest@fba92d3]" started-at="2022-03-30T15:56:26 BDT" name="afterGroup" finished-at="2022-03-30T15:56:26 BDT" duration-ms="0" status="PASS">
+        </test-method> <!-- skipTest3 -->
+        <test-method is-config="true" signature="dataTeardown()[pri:0, instance:ui.SkipTest@58d75e99]" started-at="2022-03-30T17:45:03 BDT" name="dataTeardown" finished-at="2022-03-30T17:45:03 BDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterGroup -->
-      </class> <!-- ui.BeforeAfterTest -->
+        </test-method> <!-- dataTeardown -->
+      </class> <!-- ui.SkipTest -->
       <class name="ui.GroupTest">
-        <test-method signature="test3()[pri:0, instance:ui.GroupTest@18d87d80]" started-at="2022-03-30T15:56:26 BDT" name="test3" finished-at="2022-03-30T15:56:26 BDT" duration-ms="1" status="PASS">
+        <test-method signature="test3()[pri:0, instance:ui.GroupTest@1b2abca6]" started-at="2022-03-30T17:44:57 BDT" name="test3" finished-at="2022-03-30T17:44:57 BDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
-        <test-method signature="test1()[pri:1, instance:ui.GroupTest@18d87d80]" started-at="2022-03-30T15:56:26 BDT" name="test1" finished-at="2022-03-30T15:56:26 BDT" duration-ms="1" status="PASS">
+        <test-method signature="test4()[pri:0, instance:ui.GroupTest@1b2abca6]" started-at="2022-03-30T17:44:57 BDT" name="test4" finished-at="2022-03-30T17:44:57 BDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method signature="test1()[pri:1, instance:ui.GroupTest@1b2abca6]" started-at="2022-03-30T17:44:57 BDT" name="test1" finished-at="2022-03-30T17:44:57 BDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method signature="test2()[pri:2, instance:ui.GroupTest@18d87d80]" started-at="2022-03-30T15:56:26 BDT" name="test2" finished-at="2022-03-30T15:56:26 BDT" duration-ms="0" status="PASS">
+        <test-method signature="test2()[pri:2, instance:ui.GroupTest@1b2abca6]" started-at="2022-03-30T17:44:57 BDT" name="test2" finished-at="2022-03-30T17:44:57 BDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
       </class> <!-- ui.GroupTest -->
-    </test> <!-- GRP-regression -->
-  </suite> <!-- SeleniumBasicMavenProjectUsingTestNG by groups -->
+      <class name="ui.LoginTest1">
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:ui.LoginTest1@593aaf41]" started-at="2022-03-30T17:44:57 BDT" name="loginToApplication" finished-at="2022-03-30T17:44:57 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:ui.LoginTest1@593aaf41]" started-at="2022-03-30T17:44:57 BDT" name="connectToDB" finished-at="2022-03-30T17:44:57 BDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectToDB -->
+        <test-method signature="logoutTest()[pri:1, instance:ui.LoginTest1@593aaf41]" started-at="2022-03-30T17:44:57 BDT" name="logoutTest" description="This is a logout test" finished-at="2022-03-30T17:44:57 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method is-config="true" signature="disConnectFromDB()[pri:0, instance:ui.LoginTest1@593aaf41]" started-at="2022-03-30T17:44:57 BDT" name="disConnectFromDB" finished-at="2022-03-30T17:44:57 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disConnectFromDB -->
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:ui.LoginTest1@593aaf41]" started-at="2022-03-30T17:44:57 BDT" name="connectToDB" finished-at="2022-03-30T17:44:57 BDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectToDB -->
+        <test-method signature="loginTest()[pri:2, instance:ui.LoginTest1@593aaf41]" started-at="2022-03-30T17:44:57 BDT" name="loginTest" description="This is a login test" finished-at="2022-03-30T17:44:57 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="disConnectFromDB()[pri:0, instance:ui.LoginTest1@593aaf41]" started-at="2022-03-30T17:44:57 BDT" name="disConnectFromDB" finished-at="2022-03-30T17:44:57 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disConnectFromDB -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:ui.LoginTest1@593aaf41]" started-at="2022-03-30T17:45:03 BDT" name="logoutFromApplication" finished-at="2022-03-30T17:45:03 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+      </class> <!-- ui.LoginTest1 -->
+      <class name="ui.LoginTest2">
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:ui.LoginTest2@5a56cdac]" started-at="2022-03-30T17:44:57 BDT" name="loginToApplication" finished-at="2022-03-30T17:44:57 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method signature="logoutTest()[pri:1, instance:ui.LoginTest2@5a56cdac]" started-at="2022-03-30T17:44:57 BDT" name="logoutTest" description="This is a logout test" finished-at="2022-03-30T17:44:57 BDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:ui.LoginTest2@5a56cdac]" started-at="2022-03-30T17:44:57 BDT" name="connectToDB" finished-at="2022-03-30T17:44:57 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectToDB -->
+        <test-method is-config="true" signature="disConnectFromDB()[pri:0, instance:ui.LoginTest2@5a56cdac]" started-at="2022-03-30T17:44:57 BDT" name="disConnectFromDB" finished-at="2022-03-30T17:44:57 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disConnectFromDB -->
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:ui.LoginTest2@5a56cdac]" started-at="2022-03-30T17:44:57 BDT" name="connectToDB" finished-at="2022-03-30T17:44:57 BDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectToDB -->
+        <test-method is-config="true" signature="disConnectFromDB()[pri:0, instance:ui.LoginTest2@5a56cdac]" started-at="2022-03-30T17:44:57 BDT" name="disConnectFromDB" finished-at="2022-03-30T17:44:57 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disConnectFromDB -->
+        <test-method signature="loginTest()[pri:2, instance:ui.LoginTest2@5a56cdac]" started-at="2022-03-30T17:44:57 BDT" name="loginTest" description="This is a login test" finished-at="2022-03-30T17:44:57 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:ui.LoginTest2@5a56cdac]" started-at="2022-03-30T17:45:03 BDT" name="logoutFromApplication" finished-at="2022-03-30T17:45:03 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+      </class> <!-- ui.LoginTest2 -->
+      <class name="ui.LoginTest3">
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:ui.LoginTest3@57cf54e1]" started-at="2022-03-30T17:44:57 BDT" name="loginToApplication" finished-at="2022-03-30T17:44:57 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:ui.LoginTest3@57cf54e1]" started-at="2022-03-30T17:45:00 BDT" name="connectToDB" finished-at="2022-03-30T17:45:00 BDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectToDB -->
+        <test-method is-config="true" signature="disConnectFromDB()[pri:0, instance:ui.LoginTest3@57cf54e1]" started-at="2022-03-30T17:45:00 BDT" name="disConnectFromDB" finished-at="2022-03-30T17:45:00 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disConnectFromDB -->
+        <test-method signature="logoutTest()[pri:1, instance:ui.LoginTest3@57cf54e1]" started-at="2022-03-30T17:45:00 BDT" name="logoutTest" description="This is a logout test" finished-at="2022-03-30T17:45:00 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method signature="loginTest()[pri:2, instance:ui.LoginTest3@57cf54e1]" started-at="2022-03-30T17:45:00 BDT" name="loginTest" description="This is a login test" finished-at="2022-03-30T17:45:00 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:ui.LoginTest3@57cf54e1]" started-at="2022-03-30T17:45:00 BDT" name="connectToDB" finished-at="2022-03-30T17:45:00 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectToDB -->
+        <test-method is-config="true" signature="disConnectFromDB()[pri:0, instance:ui.LoginTest3@57cf54e1]" started-at="2022-03-30T17:45:00 BDT" name="disConnectFromDB" finished-at="2022-03-30T17:45:00 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disConnectFromDB -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:ui.LoginTest3@57cf54e1]" started-at="2022-03-30T17:45:03 BDT" name="logoutFromApplication" finished-at="2022-03-30T17:45:03 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+      </class> <!-- ui.LoginTest3 -->
+      <class name="ui.VerifyTitleAndTextTest">
+        <test-method signature="titleTest()[pri:0, instance:ui.VerifyTitleAndTextTest@5b03b9fe]" started-at="2022-03-30T17:45:00 BDT" name="titleTest" finished-at="2022-03-30T17:45:03 BDT" duration-ms="2704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleTest -->
+      </class> <!-- ui.VerifyTitleAndTextTest -->
+    </test> <!-- Functional Testing -->
+  </suite> <!-- UI Test -->
+  <suite started-at="2022-03-30T17:45:03 BDT" name="UI Test Suite" finished-at="2022-03-30T17:45:03 BDT" duration-ms="23">
+    <groups>
+      <group name="bvt">
+        <method signature="BeforeAfterTest2.test3()[pri:0, instance:ui.BeforeAfterTest2@b9b00e0]" name="test3" class="ui.BeforeAfterTest2"/>
+        <method signature="BeforeAfterTest2.test4()[pri:0, instance:ui.BeforeAfterTest2@b9b00e0]" name="test4" class="ui.BeforeAfterTest2"/>
+        <method signature="GroupTest.test3()[pri:0, instance:ui.GroupTest@13fd2ccd]" name="test3" class="ui.GroupTest"/>
+        <method signature="GroupTest.test4()[pri:0, instance:ui.GroupTest@13fd2ccd]" name="test4" class="ui.GroupTest"/>
+      </group> <!-- bvt -->
+      <group name="user-registration">
+        <method signature="BeforeAfterTest2.test1()[pri:1, instance:ui.BeforeAfterTest2@b9b00e0]" name="test1" class="ui.BeforeAfterTest2"/>
+        <method signature="BeforeAfterTest2.test2()[pri:2, instance:ui.BeforeAfterTest2@b9b00e0]" name="test2" class="ui.BeforeAfterTest2"/>
+        <method signature="BeforeAfterTest2.test3()[pri:0, instance:ui.BeforeAfterTest2@b9b00e0]" name="test3" class="ui.BeforeAfterTest2"/>
+        <method signature="BeforeAfterTest2.test4()[pri:0, instance:ui.BeforeAfterTest2@b9b00e0]" name="test4" class="ui.BeforeAfterTest2"/>
+        <method signature="GroupTest.test1()[pri:1, instance:ui.GroupTest@13fd2ccd]" name="test1" class="ui.GroupTest"/>
+        <method signature="GroupTest.test2()[pri:2, instance:ui.GroupTest@13fd2ccd]" name="test2" class="ui.GroupTest"/>
+        <method signature="GroupTest.test3()[pri:0, instance:ui.GroupTest@13fd2ccd]" name="test3" class="ui.GroupTest"/>
+        <method signature="GroupTest.test4()[pri:0, instance:ui.GroupTest@13fd2ccd]" name="test4" class="ui.GroupTest"/>
+      </group> <!-- user-registration -->
+      <group name="regression">
+        <method signature="BeforeAfterTest2.test1()[pri:1, instance:ui.BeforeAfterTest2@b9b00e0]" name="test1" class="ui.BeforeAfterTest2"/>
+        <method signature="BeforeAfterTest2.test2()[pri:2, instance:ui.BeforeAfterTest2@b9b00e0]" name="test2" class="ui.BeforeAfterTest2"/>
+        <method signature="BeforeAfterTest2.test3()[pri:0, instance:ui.BeforeAfterTest2@b9b00e0]" name="test3" class="ui.BeforeAfterTest2"/>
+        <method signature="GroupTest.test1()[pri:1, instance:ui.GroupTest@13fd2ccd]" name="test1" class="ui.GroupTest"/>
+        <method signature="GroupTest.test2()[pri:2, instance:ui.GroupTest@13fd2ccd]" name="test2" class="ui.GroupTest"/>
+        <method signature="GroupTest.test3()[pri:0, instance:ui.GroupTest@13fd2ccd]" name="test3" class="ui.GroupTest"/>
+      </group> <!-- regression -->
+    </groups>
+    <test started-at="2022-03-30T17:45:03 BDT" name="Functional Testing" finished-at="2022-03-30T17:45:03 BDT" duration-ms="23">
+      <class name="ui.SkipTest">
+        <test-method signature="skipTest2()[pri:0, instance:ui.SkipTest@506ae4d4]" started-at="2022-03-30T17:45:03 BDT" name="skipTest2" finished-at="2022-03-30T17:45:03 BDT" duration-ms="1" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skiping this test]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skiping this test
+at ui.SkipTest.skipTest2(SkipTest.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- skipTest2 -->
+        <test-method signature="skipTest3()[pri:0, instance:ui.SkipTest@506ae4d4]" started-at="2022-03-30T17:45:03 BDT" name="skipTest3" finished-at="2022-03-30T17:45:03 BDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- skipTest3 -->
+      </class> <!-- ui.SkipTest -->
+      <class name="ui.BeforeAfterTest2">
+        <test-method signature="test3()[pri:0, instance:ui.BeforeAfterTest2@b9b00e0]" started-at="2022-03-30T17:45:03 BDT" name="test3" finished-at="2022-03-30T17:45:03 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method signature="test4()[pri:0, instance:ui.BeforeAfterTest2@b9b00e0]" started-at="2022-03-30T17:45:03 BDT" name="test4" finished-at="2022-03-30T17:45:03 BDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method signature="test1()[pri:1, instance:ui.BeforeAfterTest2@b9b00e0]" started-at="2022-03-30T17:45:03 BDT" name="test1" finished-at="2022-03-30T17:45:03 BDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:2, instance:ui.BeforeAfterTest2@b9b00e0]" started-at="2022-03-30T17:45:03 BDT" name="test2" finished-at="2022-03-30T17:45:03 BDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- ui.BeforeAfterTest2 -->
+      <class name="ui.GroupTest">
+        <test-method is-config="true" signature="dataSetuo()[pri:0, instance:ui.GroupTest@13fd2ccd]" started-at="2022-03-30T17:45:03 BDT" name="dataSetuo" finished-at="2022-03-30T17:45:03 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataSetuo -->
+        <test-method signature="test3()[pri:0, instance:ui.GroupTest@13fd2ccd]" started-at="2022-03-30T17:45:03 BDT" name="test3" finished-at="2022-03-30T17:45:03 BDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method signature="test4()[pri:0, instance:ui.GroupTest@13fd2ccd]" started-at="2022-03-30T17:45:03 BDT" name="test4" finished-at="2022-03-30T17:45:03 BDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method signature="test1()[pri:1, instance:ui.GroupTest@13fd2ccd]" started-at="2022-03-30T17:45:03 BDT" name="test1" finished-at="2022-03-30T17:45:03 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:2, instance:ui.GroupTest@13fd2ccd]" started-at="2022-03-30T17:45:03 BDT" name="test2" finished-at="2022-03-30T17:45:03 BDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="dataTeardown()[pri:0, instance:ui.GroupTest@13fd2ccd]" started-at="2022-03-30T17:45:03 BDT" name="dataTeardown" finished-at="2022-03-30T17:45:03 BDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataTeardown -->
+      </class> <!-- ui.GroupTest -->
+      <class name="ui.LoginTest3">
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:ui.LoginTest3@7d4f9aae]" started-at="2022-03-30T17:45:03 BDT" name="loginToApplication" finished-at="2022-03-30T17:45:03 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method signature="logoutTest()[pri:1, instance:ui.LoginTest3@7d4f9aae]" started-at="2022-03-30T17:45:03 BDT" name="logoutTest" description="This is a logout test" finished-at="2022-03-30T17:45:03 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:ui.LoginTest3@7d4f9aae]" started-at="2022-03-30T17:45:03 BDT" name="connectToDB" finished-at="2022-03-30T17:45:03 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectToDB -->
+        <test-method is-config="true" signature="disConnectFromDB()[pri:0, instance:ui.LoginTest3@7d4f9aae]" started-at="2022-03-30T17:45:03 BDT" name="disConnectFromDB" finished-at="2022-03-30T17:45:03 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disConnectFromDB -->
+        <test-method signature="loginTest()[pri:2, instance:ui.LoginTest3@7d4f9aae]" started-at="2022-03-30T17:45:03 BDT" name="loginTest" description="This is a login test" finished-at="2022-03-30T17:45:03 BDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:ui.LoginTest3@7d4f9aae]" started-at="2022-03-30T17:45:03 BDT" name="connectToDB" finished-at="2022-03-30T17:45:03 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectToDB -->
+        <test-method is-config="true" signature="disConnectFromDB()[pri:0, instance:ui.LoginTest3@7d4f9aae]" started-at="2022-03-30T17:45:03 BDT" name="disConnectFromDB" finished-at="2022-03-30T17:45:03 BDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disConnectFromDB -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:ui.LoginTest3@7d4f9aae]" started-at="2022-03-30T17:45:03 BDT" name="logoutFromApplication" finished-at="2022-03-30T17:45:03 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+      </class> <!-- ui.LoginTest3 -->
+    </test> <!-- Functional Testing -->
+  </suite> <!-- UI Test Suite -->
+  <suite started-at="2022-03-30T17:45:03 BDT" name="Master Suite" finished-at="2022-03-30T17:45:03 BDT" duration-ms="0">
+    <groups>
+    </groups>
+  </suite> <!-- Master Suite -->
 </testng-results>

@@ -2,8 +2,10 @@ package ui;
 
 import org.testng.annotations.Test;
 
+import common.CommonDataSetup;
+
 @Test(groups="user-registration")
-public class GroupTest {
+public class GroupTest extends CommonDataSetup{
 	
 	@Test(priority=1, groups="regression")
 	//public void bloginTest()

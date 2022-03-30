@@ -6,7 +6,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class LoginTest3 {
+import common.CommonDataSetup;
+
+public class LoginTest3 extends CommonDataSetup{
 	
 	@BeforeTest
 	public void loginToApplication() 

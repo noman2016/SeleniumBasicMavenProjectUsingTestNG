@@ -3,11 +3,13 @@
 <suite name="Failed suite [UI Test]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Functional Testing(failed)">
     <classes>
-      <class name="ui.VerifyTitleAndTextTest">
+      <class name="ui.SkipTest">
         <methods>
-          <include name="titleTest"/>
+          <include name="dataTeardown"/>
+          <include name="dataSetuo"/>
+          <include name="skipTest2"/>
         </methods>
-      </class> <!-- ui.VerifyTitleAndTextTest -->
+      </class> <!-- ui.SkipTest -->
     </classes>
   </test> <!-- Functional Testing(failed) -->
 </suite> <!-- Failed suite [UI Test] -->
