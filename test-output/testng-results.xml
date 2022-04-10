@@ -1,161 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-07T12:21:49 BDT" name="Default suite" finished-at="2022-04-07T12:21:49 BDT" duration-ms="34">
+  <suite started-at="2022-04-10T14:46:34 BDT" name="Default suite" finished-at="2022-04-10T14:46:57 BDT" duration-ms="22442">
     <groups>
     </groups>
-    <test started-at="2022-04-07T12:21:49 BDT" name="Default test" finished-at="2022-04-07T12:21:49 BDT" duration-ms="34">
-      <class name="ui.DataProviderTest">
-        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:ui.DataProviderTest@37654521]" started-at="2022-04-07T12:21:49 BDT" name="test" data-provider="dataSet" finished-at="2022-04-07T12:21:49 BDT" duration-ms="3" status="PASS">
+    <test started-at="2022-04-10T14:46:34 BDT" name="Default test" finished-at="2022-04-10T14:46:57 BDT" duration-ms="22442">
+      <class name="ui.DataProviderDemoTest">
+        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:ui.DataProviderDemoTest@101952da]" started-at="2022-04-10T14:46:34 BDT" name="test" data-provider="create" finished-at="2022-04-10T14:46:44 BDT" duration-ms="9150" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[user1]]>
+                <![CDATA[standard_user]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[pass1]]>
+                <![CDATA[secret_sauce]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:ui.DataProviderTest@37654521]" started-at="2022-04-07T12:21:49 BDT" name="test" data-provider="dataSet" finished-at="2022-04-07T12:21:49 BDT" duration-ms="0" status="PASS">
+        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:ui.DataProviderDemoTest@101952da]" started-at="2022-04-10T14:46:44 BDT" name="test" data-provider="create" finished-at="2022-04-10T14:46:45 BDT" duration-ms="1320" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[user2]]>
+                <![CDATA[locked_out_user]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[pass2]]>
+                <![CDATA[secret_sauce]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:ui.DataProviderTest@37654521]" started-at="2022-04-07T12:21:49 BDT" name="test" data-provider="dataSet" finished-at="2022-04-07T12:21:49 BDT" duration-ms="0" status="PASS">
+        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:ui.DataProviderDemoTest@101952da]" started-at="2022-04-10T14:46:45 BDT" name="test" data-provider="create" finished-at="2022-04-10T14:46:46 BDT" duration-ms="1358" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[user3]]>
+                <![CDATA[problem_user]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[pass3]]>
+                <![CDATA[secret_sauce]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:ui.DataProviderTest@37654521]" started-at="2022-04-07T12:21:49 BDT" name="test" data-provider="dataSet" finished-at="2022-04-07T12:21:49 BDT" duration-ms="0" status="PASS">
+        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:ui.DataProviderDemoTest@101952da]" started-at="2022-04-10T14:46:46 BDT" name="test" data-provider="create" finished-at="2022-04-10T14:46:57 BDT" duration-ms="10584" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[user4]]>
+                <![CDATA[performance_glitch_user]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[pass4]]>
+                <![CDATA[secret_sauce]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="test1(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ui.DataProviderTest@37654521]" started-at="2022-04-07T12:21:49 BDT" name="test1" data-provider="create" finished-at="2022-04-07T12:21:49 BDT" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[username1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password1]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[test1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="test1(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ui.DataProviderTest@37654521]" started-at="2022-04-07T12:21:49 BDT" name="test1" data-provider="create" finished-at="2022-04-07T12:21:49 BDT" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[username2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password2]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[test2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="test1(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ui.DataProviderTest@37654521]" started-at="2022-04-07T12:21:49 BDT" name="test1" data-provider="create" finished-at="2022-04-07T12:21:49 BDT" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[username3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password3]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[test3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="test1(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ui.DataProviderTest@37654521]" started-at="2022-04-07T12:21:49 BDT" name="test1" data-provider="create" finished-at="2022-04-07T12:21:49 BDT" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[username4]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password4]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[test4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-      </class> <!-- ui.DataProviderTest -->
+      </class> <!-- ui.DataProviderDemoTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
