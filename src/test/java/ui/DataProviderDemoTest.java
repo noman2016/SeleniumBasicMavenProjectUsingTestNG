@@ -20,8 +20,6 @@ public class DataProviderDemoTest {
 		driver.findElement(By.id("login-button")).click();
 		driver.close();
 	}
-	
-	
 
 	@DataProvider (name = "create") 
 	public Object[][] dataSet1() {
