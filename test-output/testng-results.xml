@@ -1,31 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-28T11:48:43 BDT" name="Default suite" finished-at="2022-04-28T11:48:43 BDT" duration-ms="22">
+  <suite started-at="2022-05-26T16:19:52 BDT" name="UI Test Suite" finished-at="2022-05-26T16:19:52 BDT" duration-ms="41">
     <groups>
+      <group name="bvt">
+        <method signature="GroupTestInsertCommonListeners.test3()[pri:0, instance:ui.GroupTestInsertCommonListeners@7205765b]" name="test3" class="ui.GroupTestInsertCommonListeners"/>
+        <method signature="GroupTestInsertCommonListeners.test4()[pri:0, instance:ui.GroupTestInsertCommonListeners@7205765b]" name="test4" class="ui.GroupTestInsertCommonListeners"/>
+      </group> <!-- bvt -->
+      <group name="user-registration">
+        <method signature="GroupTestInsertCommonListeners.test1()[pri:1, instance:ui.GroupTestInsertCommonListeners@7205765b]" name="test1" class="ui.GroupTestInsertCommonListeners"/>
+        <method signature="GroupTestInsertCommonListeners.test2()[pri:2, instance:ui.GroupTestInsertCommonListeners@7205765b]" name="test2" class="ui.GroupTestInsertCommonListeners"/>
+        <method signature="GroupTestInsertCommonListeners.test3()[pri:0, instance:ui.GroupTestInsertCommonListeners@7205765b]" name="test3" class="ui.GroupTestInsertCommonListeners"/>
+        <method signature="GroupTestInsertCommonListeners.test4()[pri:0, instance:ui.GroupTestInsertCommonListeners@7205765b]" name="test4" class="ui.GroupTestInsertCommonListeners"/>
+      </group> <!-- user-registration -->
+      <group name="regression">
+        <method signature="GroupTestInsertCommonListeners.test1()[pri:1, instance:ui.GroupTestInsertCommonListeners@7205765b]" name="test1" class="ui.GroupTestInsertCommonListeners"/>
+        <method signature="GroupTestInsertCommonListeners.test2()[pri:2, instance:ui.GroupTestInsertCommonListeners@7205765b]" name="test2" class="ui.GroupTestInsertCommonListeners"/>
+        <method signature="GroupTestInsertCommonListeners.test3()[pri:0, instance:ui.GroupTestInsertCommonListeners@7205765b]" name="test3" class="ui.GroupTestInsertCommonListeners"/>
+      </group> <!-- regression -->
     </groups>
-    <test started-at="2022-04-28T11:48:43 BDT" name="Default test" finished-at="2022-04-28T11:48:43 BDT" duration-ms="22">
-      <class name="ui.ParameterPassLoginTest">
-        <test-method signature="launchApplication(java.lang.String)[pri:0, instance:ui.ParameterPassLoginTest@193f604a]" started-at="2022-04-28T11:48:43 BDT" name="launchApplication" finished-at="2022-04-28T11:48:43 BDT" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
+    <test started-at="2022-05-26T16:19:52 BDT" name="Functional Testing" finished-at="2022-05-26T16:19:52 BDT" duration-ms="41">
+      <class name="ui.GroupTestInsertCommonListeners">
+        <test-method is-config="true" signature="dataSetuo()[pri:0, instance:ui.GroupTestInsertCommonListeners@7205765b]" started-at="2022-05-26T16:19:52 BDT" name="dataSetuo" finished-at="2022-05-26T16:19:52 BDT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataSetuo -->
+        <test-method signature="test3()[pri:0, instance:ui.GroupTestInsertCommonListeners@7205765b]" started-at="2022-05-26T16:19:52 BDT" name="test3" finished-at="2022-05-26T16:19:52 BDT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method signature="test4()[pri:0, instance:ui.GroupTestInsertCommonListeners@7205765b]" started-at="2022-05-26T16:19:52 BDT" name="test4" finished-at="2022-05-26T16:19:52 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method signature="test1()[pri:1, instance:ui.GroupTestInsertCommonListeners@7205765b]" started-at="2022-05-26T16:19:52 BDT" name="test1" finished-at="2022-05-26T16:19:52 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:2, instance:ui.GroupTestInsertCommonListeners@7205765b]" started-at="2022-05-26T16:19:52 BDT" name="test2" finished-at="2022-05-26T16:19:52 BDT" duration-ms="14" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[
-Parameter 'browser' is required by @Test on method launchApplication but has not been marked @Optional or defined
-in C:\Users\HP\AppData\Local\Temp\testng-eclipse--1157257338\testng-customsuite.xml]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by @Test on method launchApplication but has not been marked @Optional or defined
-in C:\Users\HP\AppData\Local\Temp\testng-eclipse--1157257338\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at ui.GroupTestInsertCommonListeners.test2(GroupTestInsertCommonListeners.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -47,11 +80,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchApplication -->
-      </class> <!-- ui.ParameterPassLoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="dataTeardown()[pri:0, instance:ui.GroupTestInsertCommonListeners@7205765b]" started-at="2022-05-26T16:19:52 BDT" name="dataTeardown" finished-at="2022-05-26T16:19:52 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataTeardown -->
+      </class> <!-- ui.GroupTestInsertCommonListeners -->
+    </test> <!-- Functional Testing -->
+  </suite> <!-- UI Test Suite -->
 </testng-results>

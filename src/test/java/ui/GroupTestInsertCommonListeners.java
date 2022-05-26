@@ -1,0 +1,40 @@
+package ui;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import common.CommonDataSetup;
+
+@Test(groups="user-registration")
+public class GroupTestInsertCommonListeners extends CommonDataSetup{
+	
+	@Test(priority=1, groups="regression")
+	//public void bloginTest()
+	public void test1()
+	
+	{
+		System.out.println("Test1");
+
+	}
+	
+	@Test(priority=2, groups="regression")
+	//public void alogoutTest() 
+	public void test2() 
+	{
+		System.out.println("Test2");
+		Assert.assertTrue(false);
+	}
+	
+	@Test(groups= {"regression","bvt"})
+	public void test3() 
+	{
+		System.out.println("Test3");
+	}
+	
+	@Test(groups= {"bvt"})
+	public void test4() 
+	{
+		System.out.println("Test4");
+	}
+
+}
