@@ -1,10 +1,16 @@
 package common;
 
+import java.io.IOException;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class Listeners implements ITestListener{
+import utilities.testUtils;
+
+/*public class Listeners implements ITestListener*/
+//Added later extends testUtils for Screenshot
+public class Listeners extends testUtils implements ITestListener{
 		
 	// When Test case get Started, this method is called.		
     public void onTestStart(ITestResult result){
@@ -24,6 +30,13 @@ public class Listeners implements ITestListener{
     	//TODO Auto-generated method stub
     	//System.out.println("The name of the testcase failed is :"+result.getName());	
     	System.out.println("Test failed - screenshot captured");
+    	//Added later try catch
+    	try {
+			getScreenshot();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     }
     
     // When Test case get Skipped, this method is called.		
