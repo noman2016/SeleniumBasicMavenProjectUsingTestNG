@@ -1,6 +1,5 @@
 package ui;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import common.BaseTest;
