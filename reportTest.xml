@@ -3,6 +3,7 @@
 <suite name="Listener Test Suite">
 	<listeners>
 		<listener class-name="common.ListenersForReports" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 	</listeners>
 	<test name="Reports Testing">
 

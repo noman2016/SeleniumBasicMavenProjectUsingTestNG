@@ -32,6 +32,7 @@ public class ListenersForReports extends testUtils implements ITestListener{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+    	Reporter.log("<a href=\"E:\\SeleniumAutomation\\Java\\SeleniumBasicMavenProjectUsingTestNG\\screenshot\\Mon-May-30-17-10-57-BDT-2022.png\">Test Results</a>");
     }
     		
     public void onTestSkipped(ITestResult Result){
