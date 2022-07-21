@@ -1,52 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="0" failed="0" skipped="4">
+<testng-results ignored="0" total="2" passed="0" failed="1" skipped="1">
   <reporter-output>
-    <line>
-      <![CDATA[Method name is - reporterTest1]]>
-    </line>
-    <line>
-      <![CDATA[Method name is - reporterTest2]]>
-    </line>
-    <line>
-      <![CDATA[Method name is - reporterTest3]]>
-    </line>
-    <line>
-      <![CDATA[Method name is - reporterTest4]]>
-    </line>
-    <line>
-      <![CDATA[==============================================================================================]]>
-    </line>
-    <line>
-      <![CDATA[Total Passed: 0(+0), Failures: 0(+0), Skips: 4(+4)]]>
-    </line>
-    <line>
-      <![CDATA[==============================================================================================]]>
-    </line>
   </reporter-output>
-  <suite started-at="2022-06-28T16:59:36 BDT" name="Listener Test Suite" finished-at="2022-06-28T16:59:36 BDT" duration-ms="25">
+  <suite started-at="2022-07-21T17:41:14 BDT" name="Default suite" finished-at="2022-07-21T17:41:14 BDT" duration-ms="31">
     <groups>
     </groups>
-    <test started-at="2022-06-28T16:59:36 BDT" name="Reports Testing" finished-at="2022-06-28T16:59:36 BDT" duration-ms="25">
-      <class name="ui.ReportsTest">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:ui.ReportsTest@38145825]" started-at="2022-06-28T16:59:36 BDT" name="launchBrowser" finished-at="2022-06-28T16:59:36 BDT" duration-ms="10" status="FAIL">
-          <exception class="java.lang.ExceptionInInitializerError">
+    <test started-at="2022-07-21T17:41:14 BDT" name="Default test" finished-at="2022-07-21T17:41:14 BDT" duration-ms="31">
+      <class name="ui.DependencyTest">
+        <test-method signature="userRegistration()[pri:0, instance:ui.DependencyTest@6bedbc4d]" started-at="2022-07-21T17:41:14 BDT" name="userRegistration" finished-at="2022-07-21T17:41:14 BDT" duration-ms="6" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.ExceptionInInitializerError
-at io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:346)
-at io.github.bonigarcia.wdm.config.Config.<init>(Config.java:103)
-at io.github.bonigarcia.wdm.WebDriverManager.<init>(WebDriverManager.java:189)
-at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.<init>(FirefoxDriverManager.java:41)
-at io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver(WebDriverManager.java:212)
-at common.BaseTest.launchBrowser(BaseTest.java:16)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at ui.DependencyTest.userRegistration(DependencyTest.java:11)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
 at org.testng.SuiteRunner.run(SuiteRunner.java:276)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
@@ -57,38 +47,28 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NumberFormatException: multiple points
-at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1914)
-at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
-at java.base/java.lang.Float.parseFloat(Float.java:476)
-at org.apache.commons.lang.SystemUtils.getJavaVersionAsFloat(SystemUtils.java:1117)
-at org.apache.commons.lang.SystemUtils.<clinit>(SystemUtils.java:817)
-... 25 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.ExceptionInInitializerError -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="reporterTest1()[pri:0, instance:ui.ReportsTest@38145825]" started-at="2022-06-28T16:59:36 BDT" name="reporterTest1" finished-at="2022-06-28T16:59:36 BDT" duration-ms="0" status="SKIP">
-          <exception class="java.lang.ExceptionInInitializerError">
+        </test-method> <!-- userRegistration -->
+        <test-method signature="userSerch()[pri:0, instance:ui.DependencyTest@6bedbc4d]" started-at="2022-07-21T17:41:14 BDT" name="userSerch" finished-at="2022-07-21T17:41:14 BDT" depends-on-methods="ui.DependencyTest.userRegistration" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method DependencyTest.userSerch()[pri:0, instance:ui.DependencyTest@6bedbc4d] depends on not successfully finished methods]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.ExceptionInInitializerError
-at io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:346)
-at io.github.bonigarcia.wdm.config.Config.<init>(Config.java:103)
-at io.github.bonigarcia.wdm.WebDriverManager.<init>(WebDriverManager.java:189)
-at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.<init>(FirefoxDriverManager.java:41)
-at io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver(WebDriverManager.java:212)
-at common.BaseTest.launchBrowser(BaseTest.java:16)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)
+              <![CDATA[java.lang.Throwable: Method DependencyTest.userSerch()[pri:0, instance:ui.DependencyTest@6bedbc4d] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
 at org.testng.SuiteRunner.run(SuiteRunner.java:276)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
@@ -99,168 +79,13 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NumberFormatException: multiple points
-at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1914)
-at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
-at java.base/java.lang.Float.parseFloat(Float.java:476)
-at org.apache.commons.lang.SystemUtils.getJavaVersionAsFloat(SystemUtils.java:1117)
-at org.apache.commons.lang.SystemUtils.<clinit>(SystemUtils.java:817)
-... 25 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.ExceptionInInitializerError -->
-          <reporter-output>
-            <line>
-              <![CDATA[Method name is - reporterTest2]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- reporterTest1 -->
-        <test-method signature="reporterTest2()[pri:0, instance:ui.ReportsTest@38145825]" started-at="2022-06-28T16:59:36 BDT" name="reporterTest2" finished-at="2022-06-28T16:59:36 BDT" duration-ms="0" status="SKIP">
-          <exception class="java.lang.ExceptionInInitializerError">
-            <full-stacktrace>
-              <![CDATA[java.lang.ExceptionInInitializerError
-at io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:346)
-at io.github.bonigarcia.wdm.config.Config.<init>(Config.java:103)
-at io.github.bonigarcia.wdm.WebDriverManager.<init>(WebDriverManager.java:189)
-at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.<init>(FirefoxDriverManager.java:41)
-at io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver(WebDriverManager.java:212)
-at common.BaseTest.launchBrowser(BaseTest.java:16)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NumberFormatException: multiple points
-at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1914)
-at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
-at java.base/java.lang.Float.parseFloat(Float.java:476)
-at org.apache.commons.lang.SystemUtils.getJavaVersionAsFloat(SystemUtils.java:1117)
-at org.apache.commons.lang.SystemUtils.<clinit>(SystemUtils.java:817)
-... 25 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ExceptionInInitializerError -->
-          <reporter-output>
-            <line>
-              <![CDATA[Method name is - reporterTest3]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- reporterTest2 -->
-        <test-method signature="reporterTest3()[pri:0, instance:ui.ReportsTest@38145825]" started-at="2022-06-28T16:59:36 BDT" name="reporterTest3" finished-at="2022-06-28T16:59:36 BDT" duration-ms="0" status="SKIP">
-          <exception class="java.lang.ExceptionInInitializerError">
-            <full-stacktrace>
-              <![CDATA[java.lang.ExceptionInInitializerError
-at io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:346)
-at io.github.bonigarcia.wdm.config.Config.<init>(Config.java:103)
-at io.github.bonigarcia.wdm.WebDriverManager.<init>(WebDriverManager.java:189)
-at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.<init>(FirefoxDriverManager.java:41)
-at io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver(WebDriverManager.java:212)
-at common.BaseTest.launchBrowser(BaseTest.java:16)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NumberFormatException: multiple points
-at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1914)
-at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
-at java.base/java.lang.Float.parseFloat(Float.java:476)
-at org.apache.commons.lang.SystemUtils.getJavaVersionAsFloat(SystemUtils.java:1117)
-at org.apache.commons.lang.SystemUtils.<clinit>(SystemUtils.java:817)
-... 25 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ExceptionInInitializerError -->
-          <reporter-output>
-            <line>
-              <![CDATA[Method name is - reporterTest4]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- reporterTest3 -->
-        <test-method signature="reporterTest4()[pri:0, instance:ui.ReportsTest@38145825]" started-at="2022-06-28T16:59:36 BDT" name="reporterTest4" finished-at="2022-06-28T16:59:36 BDT" duration-ms="0" status="SKIP">
-          <exception class="java.lang.ExceptionInInitializerError">
-            <full-stacktrace>
-              <![CDATA[java.lang.ExceptionInInitializerError
-at io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:346)
-at io.github.bonigarcia.wdm.config.Config.<init>(Config.java:103)
-at io.github.bonigarcia.wdm.WebDriverManager.<init>(WebDriverManager.java:189)
-at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.<init>(FirefoxDriverManager.java:41)
-at io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver(WebDriverManager.java:212)
-at common.BaseTest.launchBrowser(BaseTest.java:16)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NumberFormatException: multiple points
-at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1914)
-at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
-at java.base/java.lang.Float.parseFloat(Float.java:476)
-at org.apache.commons.lang.SystemUtils.getJavaVersionAsFloat(SystemUtils.java:1117)
-at org.apache.commons.lang.SystemUtils.<clinit>(SystemUtils.java:817)
-... 25 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ExceptionInInitializerError -->
-          <reporter-output>
-            <line>
-              <![CDATA[==============================================================================================]]>
-            </line>
-            <line>
-              <![CDATA[Total Passed: 0(+0), Failures: 0(+0), Skips: 4(+4)]]>
-            </line>
-            <line>
-              <![CDATA[==============================================================================================]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- reporterTest4 -->
-        <test-method is-config="true" signature="ClosingBrowser()[pri:0, instance:ui.ReportsTest@38145825]" started-at="2022-06-28T16:59:36 BDT" name="ClosingBrowser" finished-at="1970-01-01T06:00:00 BDT" duration-ms="-1656413976584" status="SKIP">
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClosingBrowser -->
-      </class> <!-- ui.ReportsTest -->
-    </test> <!-- Reports Testing -->
-  </suite> <!-- Listener Test Suite -->
+        </test-method> <!-- userSerch -->
+      </class> <!-- ui.DependencyTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
